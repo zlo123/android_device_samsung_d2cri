@@ -1,5 +1,9 @@
-# system.prop for SCH-I535
+windowsmgr.max_events_per_sec=275
 #
+# system.prop for SCH-R530C
+#
+## cannot take spaces
+rild.libargs=-d /dev/smd0
 
 # cannot take spaces
 rild.libargs=-d /dev/smd0
@@ -7,7 +11,15 @@ rild.libargs=-d /dev/smd0
 # Fields for custom RIL
 # MAX PROP NAME is 31 chars --|
 ro.telephony.ril_class=SamsungCDMAQualcommRIL
-ro.cdma.home.operator.numeric=31016
 ro.cdma.home.operator.alpha=Cricket
+ro.cdma.home.operator.numeric=31016
 ro.telephony.default_network=8
 telephony.lteOnCdmaDevice=1
+
+# Fields For VM Heapsize
+dalvik.vm.heapsize=512m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapstartsize=32m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heaputilization=0.75

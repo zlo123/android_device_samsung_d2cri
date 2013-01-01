@@ -1,4 +1,6 @@
-# Copyright (C) 2009 The CyanogenMod Project
+#
+# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012 The LiquidSmooth Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,16 +22,14 @@
 # definition file).
 #
 
-# inherit from common D2
--include device/samsung/d2-common/BoardConfigCommon.mk
-
-# inherit from the proprietary version
--include vendor/samsung/d2r530/BoardConfigVendor.mk
-
-# Assert
+# assert
 TARGET_OTA_ASSERT_DEVICE := d2cri
 
-# Kernel
-TARGET_KERNEL_CONFIG    := cyanogen_d2cri_defconfig
+# common
+-include device/samsung/d2-common/BoardConfigCommon.mk
 
+# include
+-include vendor/samsung/d2r530/BoardConfigVendor.mk
 
+# kernel
+TARGET_KERNEL_CONFIG := cyanogen_d2cri_defconfig
