@@ -16,7 +16,7 @@
 #
 
 # device
-$(call inherit-product, device/samsung/d2usc/full_d2cri.mk)
+$(call inherit-product, device/samsung/d2cri/full_d2cri.mk)
 
 # phone
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
